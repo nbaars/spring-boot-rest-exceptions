@@ -8,7 +8,7 @@ will print:
 {"name":"Peter - Parker - alias Spiderman"}{"error":{"code":"FAILURE","message":"Does not compute"}}
 ```
 
-Which is not valid json, this stack trace is:
+Which is not valid json, the stack trace is:
 
 ```
 Caused by: org.springframework.beans.NotReadablePropertyException: Invalid property 'test' of bean class [io.nbaars.superheroes.domain.SuperHero]: Could not find field for property during fallback access!
@@ -31,7 +31,7 @@ Caused by: org.springframework.beans.NotReadablePropertyException: Invalid prope
 	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:774) ~[jackson-databind-2.13.1.jar:2.13.1]
 ```
 
-Without the SpEL expression, the response is:
+Without the SpEL expression in the class `SuperHeroView`, the response is:
 
 ```json
 {"error":{"code":"FAILURE","message":"Does not compute"}}
