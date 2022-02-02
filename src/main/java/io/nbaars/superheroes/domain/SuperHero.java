@@ -1,4 +1,4 @@
-package io.tpd.superheroes.domain;
+package io.nbaars.superheroes.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

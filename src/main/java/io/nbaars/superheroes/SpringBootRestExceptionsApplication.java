@@ -1,4 +1,4 @@
-package io.tpd.superheroes;
+package io.nbaars.superheroes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

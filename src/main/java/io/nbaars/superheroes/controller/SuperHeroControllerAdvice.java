@@ -1,7 +1,7 @@
-package io.tpd.superheroes.controller;
+package io.nbaars.superheroes.controller;
 
-import io.tpd.superheroes.controller.errors.SuperHeroAppError;
-import io.tpd.superheroes.exceptions.NonExistingHeroException;
+import io.nbaars.superheroes.controller.errors.SuperHeroAppError;
+import io.nbaars.superheroes.exceptions.NonExistingHeroException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

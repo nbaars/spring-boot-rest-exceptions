@@ -1,4 +1,4 @@
-package io.tpd.superheroes.controller.errors;
+package io.nbaars.superheroes.controller.errors;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

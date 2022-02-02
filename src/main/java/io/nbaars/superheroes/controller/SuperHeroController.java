@@ -1,9 +1,9 @@
-package io.tpd.superheroes.controller;
+package io.nbaars.superheroes.controller;
 
-import io.tpd.superheroes.controller.errors.SuperHeroView;
-import io.tpd.superheroes.domain.SuperHero;
-import io.tpd.superheroes.exceptions.NonExistingHeroException;
-import io.tpd.superheroes.repository.SuperHeroRepository;
+import io.nbaars.superheroes.controller.errors.SuperHeroView;
+import io.nbaars.superheroes.domain.SuperHero;
+import io.nbaars.superheroes.exceptions.NonExistingHeroException;
+import io.nbaars.superheroes.repository.SuperHeroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

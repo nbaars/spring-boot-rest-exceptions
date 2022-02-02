@@ -1,6 +1,6 @@
-package io.tpd.superheroes.exceptions;
+package io.nbaars.superheroes.exceptions;
 
-import io.tpd.superheroes.controller.errors.ErrorCode;
+import io.nbaars.superheroes.controller.errors.ErrorCode;
 
 /**
  * This exception is thrown when the SuperHero can't be found in the application if searching by ID.

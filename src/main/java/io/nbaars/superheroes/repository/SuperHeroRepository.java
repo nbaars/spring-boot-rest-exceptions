@@ -1,6 +1,6 @@
-package io.tpd.superheroes.repository;
+package io.nbaars.superheroes.repository;
 
-import io.tpd.superheroes.domain.SuperHero;
+import io.nbaars.superheroes.domain.SuperHero;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
