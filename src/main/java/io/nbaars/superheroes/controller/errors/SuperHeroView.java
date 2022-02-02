@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 public interface SuperHeroView {
 
-    @Value("#{target.firstName}")
+    @Value("#{target.firstName}") // <-- If you remove this it will work
     String getFirstNames();
     String getTest(); // <-- Not a valid property
 }
