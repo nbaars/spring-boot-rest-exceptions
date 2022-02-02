@@ -16,6 +16,6 @@ public class DataLoader implements ApplicationRunner {
     }
 
     public void run(ApplicationArguments args) {
-        repository.save(new SuperHero("lala", "lala", "lala"));
+        repository.save(new SuperHero("Peter", "Parker", "Spiderman"));
     }
 }
