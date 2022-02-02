@@ -1,7 +1,7 @@
-package io.nbaars.superheroes.controller;
+package demo.superheroes.controller;
 
-import io.nbaars.superheroes.controller.errors.SuperHeroAppError;
-import io.nbaars.superheroes.exceptions.NonExistingHeroException;
+import demo.superheroes.controller.errors.SuperHeroAppError;
+import demo.superheroes.exceptions.NonExistingHeroException;
 import org.slf4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;

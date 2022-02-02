@@ -1,6 +1,6 @@
-package io.nbaars.superheroes.exceptions;
+package demo.superheroes.exceptions;
 
-import io.nbaars.superheroes.controller.errors.ErrorCode;
+import demo.superheroes.controller.errors.ErrorCode;
 
 public class NonExistingHeroException extends RuntimeException implements ErrorCode {
 

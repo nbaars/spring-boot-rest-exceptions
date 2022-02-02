@@ -1,3 +1,5 @@
+Most of the source code is originally taken from: https://thepracticaldeveloper.com/custom-error-handling-rest-controllers-spring-boot/ and simplified to point out the issue with projections and SpEL expressions. 
+
 ```bash
 curl -v localhost:9999/superheroes/1
 ```
@@ -11,7 +13,7 @@ will print:
 Which is not valid json, the stack trace is:
 
 ```
-Caused by: org.springframework.beans.NotReadablePropertyException: Invalid property 'test' of bean class [io.nbaars.superheroes.domain.SuperHero]: Could not find field for property during fallback access!
+Caused by: org.springframework.beans.NotReadablePropertyException: Invalid property 'demo' of bean class [demo.superheroes.domain.SuperHero]: Could not find field for property during fallback access!
 	at org.springframework.data.util.DirectFieldAccessFallbackBeanWrapper.getPropertyValue(DirectFieldAccessFallbackBeanWrapper.java:58) ~[spring-data-commons-2.6.1.jar:2.6.1]
 	at org.springframework.data.projection.PropertyAccessingMethodInterceptor.invoke(PropertyAccessingMethodInterceptor.java:73) ~[spring-data-commons-2.6.1.jar:2.6.1]
 	at org.springframework.data.projection.SpelEvaluatingMethodInterceptor.invoke(SpelEvaluatingMethodInterceptor.java:138) ~[spring-data-commons-2.6.1.jar:2.6.1]
@@ -78,7 +80,7 @@ org.springframework.data.mapping.PropertyReferenceException: No property name fo
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.15.jar:5.3.15]
 	at jdk.proxy2/jdk.proxy2.$Proxy97.findById(Unknown Source) ~[na:na]
-	at io.nbaars.superheroes.controller.SuperHeroController.getSuperHeroById(SuperHeroController.java:27) ~[classes/:na]
+	at demo.superheroes.controller.SuperHeroController.getSuperHeroById(SuperHeroController.java:27) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]

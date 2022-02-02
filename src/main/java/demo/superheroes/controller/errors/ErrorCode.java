@@ -1,4 +1,4 @@
-package io.nbaars.superheroes.controller.errors;
+package demo.superheroes.controller.errors;
 
 public interface ErrorCode {
 

@@ -1,4 +1,4 @@
-package io.nbaars.superheroes.controller.errors;
+package demo.superheroes.controller.errors;
 
 import org.springframework.beans.factory.annotation.Value;
 

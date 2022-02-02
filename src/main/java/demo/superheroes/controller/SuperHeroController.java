@@ -1,9 +1,9 @@
-package io.nbaars.superheroes.controller;
+package demo.superheroes.controller;
 
-import io.nbaars.superheroes.controller.errors.SuperHeroView;
-import io.nbaars.superheroes.domain.SuperHero;
-import io.nbaars.superheroes.exceptions.NonExistingHeroException;
-import io.nbaars.superheroes.repository.SuperHeroRepository;
+import demo.superheroes.controller.errors.SuperHeroView;
+import demo.superheroes.domain.SuperHero;
+import demo.superheroes.exceptions.NonExistingHeroException;
+import demo.superheroes.repository.SuperHeroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +24,7 @@ public final class SuperHeroController {
 
     @GetMapping("/{id}")
     public SuperHeroView getSuperHeroById(@PathVariable Long id) {
-        return superHeroRepository.findById(id, SuperHeroView.class).orElseThrow(() -> new NonExistingHeroException("test"));
+        return superHeroRepository.findById(id, SuperHeroView.class).orElseThrow(() -> new NonExistingHeroException("demo"));
     }
 
     @GetMapping

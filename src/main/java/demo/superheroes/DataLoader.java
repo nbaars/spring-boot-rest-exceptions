@@ -1,7 +1,7 @@
-package io.nbaars.superheroes;
+package demo.superheroes;
 
-import io.nbaars.superheroes.domain.SuperHero;
-import io.nbaars.superheroes.repository.SuperHeroRepository;
+import demo.superheroes.domain.SuperHero;
+import demo.superheroes.repository.SuperHeroRepository;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;

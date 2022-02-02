@@ -1,6 +1,6 @@
-package io.nbaars.superheroes.repository;
+package demo.superheroes.repository;
 
-import io.nbaars.superheroes.domain.SuperHero;
+import demo.superheroes.domain.SuperHero;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
